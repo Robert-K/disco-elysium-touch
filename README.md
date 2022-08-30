@@ -1,10 +1,10 @@
-# <img src="eye-active.png" width="32"/> Disco Elysium Touch Overlay <img src="eye-active.png" width="32"/>
+# <img src="resources/eye-active.png" width="32"/> Disco Elysium Touch Overlay <img src="resources/eye-active.png" width="32"/>
 An Overlay for Disco Elysium, making the game fully playable with touch input only!
 
 &nbsp;
 
 ## 🪶 Portable, no installation required
-Simply run the executable, it will automatically detect the game and show up. If you wish to stop it, look for the <img src="eye-active.png" width="16"/> tray icon.
+Simply run the executable, it will automatically detect the game and show up. <ins>Make sure the resources folder is in the same directory as the executable.</ins> If you wish to stop it, look for the <img src="resources/eye.png" width="16"/> tray icon.
 
 &nbsp;
 
