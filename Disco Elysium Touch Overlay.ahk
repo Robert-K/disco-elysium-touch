@@ -64,9 +64,9 @@ Loop:
     WinWaitNotActive('ahk_id ' GameWindowID)
     ControlsGui.Hide()
     MenuGui.Hide()
-    TraySetIcon('eye.png', 0, 1)
+    TraySetIcon('resources\eye.png', 0, 1)
     WinWaitActive('ahk_id ' GameWindowID)
     ControlsGui.Show('x0 yCenter NoActivate')
     MenuGui.Show('x0 y0 NoActivate')
-    TraySetIcon('eye-active.png', 0, 1)
+    TraySetIcon('resources\eye-active.png', 0, 1)
     Goto Loop
