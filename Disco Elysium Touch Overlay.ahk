@@ -1,4 +1,5 @@
 #SingleInstance Force
+SetWorkingDir(A_ScriptDir)
 
 TraySetIcon('resources\eye.png', 0, 1)
 
