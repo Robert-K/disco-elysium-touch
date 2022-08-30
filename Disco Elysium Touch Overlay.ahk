@@ -1,6 +1,6 @@
 #SingleInstance Force
 
-TraySetIcon('eye.png', 0, 1)
+TraySetIcon('resources\eye.png', 0, 1)
 
 GameWindowID := WinWait('ahk_exe Disco Elysium.exe', ,)
 
@@ -20,24 +20,24 @@ ToggleFocus(*)
     global FocusOn
     FocusOn := !FocusOn
     Send(FocusOn ? '{Tab down}' : '{Tab up}')
-    Eye.Value := FocusOn ? 'eye-active.png' : 'eye.png'
+    Eye.Value := FocusOn ? 'resources\eye-active.png' : 'resources\eye.png'
 }
 
 ControlsGui := Gui()
 ControlsGui.Opt('+AlwaysOnTop -Caption +ToolWindow +E0x08000000')
 ControlsGui.BackColor := 'black'
 ControlsGui.MarginY := 22
-ControlsGui.Add('Picture', 'x0 y0', 'background.png')
-Minus := ControlsGui.Add('Picture', 'x8 y24 w-1 h40 BackgroundTrans', 'minus.png')
-Eye := ControlsGui.Add('Picture', 'w-1 h40 BackgroundTrans', 'eye.png')
-Plus := ControlsGui.Add('Picture', 'w-1 h40 BackgroundTrans', 'plus.png')
+ControlsGui.Add('Picture', 'x0 y0', 'resources\background.png')
+Minus := ControlsGui.Add('Picture', 'x8 y24 w-1 h40 BackgroundTrans', 'resources\minus.png')
+Eye := ControlsGui.Add('Picture', 'w-1 h40 BackgroundTrans', 'resources\eye.png')
+Plus := ControlsGui.Add('Picture', 'w-1 h40 BackgroundTrans', 'resources\plus.png')
 WinSetTransColor(ControlsGui.BackColor ' 248', ControlsGui)
 Height := 451
 
 MenuGui := Gui()
 MenuGui.Opt('+AlwaysOnTop -Caption +ToolWindow +E0x08000000')
 MenuGui.BackColor := 'black'
-MenuGui.Add('Picture', 'x0 y0', 'menu.png')
+MenuGui.Add('Picture', 'x0 y0', 'resources\menu.png')
 WinSetTransColor(MenuGui.BackColor ' 248', MenuGui)
 
 OnMessage 0x0201, WM_LBUTTONDOWN
