@@ -65,7 +65,7 @@ Loop:
     ControlsGui.Hide()
     MenuGui.Hide()
     TraySetIcon('resources\eye.png', 0, 1)
-    WinWaitActive('ahk_id ' GameWindowID)
+    GameWindowID := WinWaitActive('ahk_exe Disco Elysium.exe', ,)
     ControlsGui.Show('x0 yCenter NoActivate')
     MenuGui.Show('x0 y0 NoActivate')
     TraySetIcon('resources\eye-active.png', 0, 1)
