@@ -21,3 +21,7 @@ The app creates two ToolWindows that float on top of the game and get hidden whe
 
 ## 🤓 Don't trust a random executable from the internet? Compile it yourself!
 You'll need [AutoHotkey v2](https://www.autohotkey.com/download/ahk-v2.zip)(!). You can simply run the script directly or compile it to an executable with [Ahk2Exe](https://github.com/AutoHotkey/Ahk2Exe).
+
+&nbsp;
+
+[![forthebadge](https://forthebadge.com/images/badges/it-works-why.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-out-pants.svg)](https://forthebadge.com)
