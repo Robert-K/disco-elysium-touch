@@ -3,7 +3,7 @@ SetWorkingDir(A_ScriptDir)
 
 TraySetIcon('resources\eye.png', 0, 1)
 
-GameWindowID := WinWait('ahk_exe Disco Elysium.exe', ,)
+GameWindowID := WinWait('Disco Elysium', ,)
 
 ZoomIn(*)
 {
@@ -65,7 +65,7 @@ Loop:
     ControlsGui.Hide()
     MenuGui.Hide()
     TraySetIcon('resources\eye.png', 0, 1)
-    GameWindowID := WinWaitActive('ahk_exe Disco Elysium.exe', ,)
+    GameWindowID := WinWaitActive('Disco Elysium', ,)
     ControlsGui.Show('x0 yCenter NoActivate')
     MenuGui.Show('x0 y0 NoActivate')
     TraySetIcon('resources\eye-active.png', 0, 1)
